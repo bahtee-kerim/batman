@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Font Awesome - иконочный шрифт и CSS-инструментарий">
+  <meta name="author" content="Dave Gandy">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name='yandex-verification' content='4fadb84c2785fec3' />
+  <meta name="google-site-verification" content="aQ3jmD0fj6NRV3dFlT2zpf8oocHRXACMsrVaGb2dX34" />
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+  <title>Начало работы с Font Awesome</title>
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/pygments.css">
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.fonticons.com/ffe176a3.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61806998-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+<body class="font-awesome v-get-started">
+  <div id="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
+    <div class="hidden-print fa5" id="banner">
+  <div class="container">
+    <div class="message-container">
+      <div class="tagline">
+        <strong>Font Awesome 5 уже доступен!</strong> Иконки, SVG, лигатуры и многое другое.
+      </div>
+      <div class="action">
+        <a id="rotating-url" class="btn btn-primary btn-lg btn-block" href="https://fontawesome.com/" target="_blank">
+          Font Awesome 5 &nbsp;<i class='fas fas-external-link'></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navbar navbar-inverse navbar-static-top hidden-print">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i>
+        <span class="sr-only">Развернуть меню</span>
+      </button>
+      <a class="navbar-brand" href="../"><i class="fa fa-font-awesome" aria-hidden="true"></i> Font Awesome</a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="hidden-sm "><a href="../">Главная</a></li>
+        <li class="hidden-sm">
+          <a href="../whats-new/">Что нового</a>
+        </li>
+        <li class="hidden-xs hidden-md hidden-lg">
+          <a href="../whats-new/">Новое</a>
+        </li>
+
+        <li class="hidden-sm active"><a href="../get-started/">Начало работы</a></li>
+        <li class="hidden-xs hidden-md hidden-lg active">
+          <a href="../get-started/">Начать</a>
+        </li>
+
+        <li class="dropdown-split-left"><a href="../all-icons/">Иконки</a></li>
+        <li class="dropdown dropdown-split-right hidden-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" title="Развернуть меню"></i>
+            <span class="sr-only">Развернуть меню</span>
+            <span class="toggle drop down"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="../all-icons/"><i class="fa fa-flag fa-fw" aria-hidden="true"></i>&nbsp; Все иконки</a></li>
+            <li class="divider"></li>
+            <li><a href="../all-icons/#new"><i class="fa fa-fort-awesome fa-fw" aria-hidden="true"></i>&nbsp; Новые иконки в 4.7</a></li>
+            <li><a href="../all-icons/#web-application"><i class="fa fa-camera-retro fa-fw" aria-hidden="true"></i>&nbsp; Веб-приложения</a></li>
+            <li><a href="../all-icons/#accessibility"><i class="fa fa-universal-access fa-fw" aria-hidden="true"></i>&nbsp; Иконки ограничений</a></li>
+            <li><a href="../all-icons/#hand"><i class="fa fa-hand-spock-o fa-fw" aria-hidden="true"></i>&nbsp; Иконки жестов</a></li>
+            <li><a href="../all-icons/#transportation"><i class="fa fa-ship fa-fw" aria-hidden="true"></i>&nbsp; Транспорт</a></li>
+            <li><a href="../all-icons/#gender"><i class="fa fa-venus fa-fw" aria-hidden="true"></i>&nbsp; Гендерные</a></li>
+            <li><a href="../all-icons/#file-type"><i class="fa fa-file-image-o fa-fw" aria-hidden="true"></i>&nbsp; Типы файлов</a></li>
+            <li><a href="../all-icons/#spinner"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i>&nbsp; Вращающиеся</a></li>
+            <li><a href="../all-icons/#form-control"><i class="fa fa-check-square fa-fw" aria-hidden="true"></i>&nbsp; Элементы форм</a></li>
+            <li><a href="../all-icons/#payment"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i>&nbsp; Платежные системы</a></li>
+            <li><a href="../all-icons/#chart"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Диаграммы</a></li>
+            <li><a href="../all-icons/#currency"><i class="fa fa-won fa-fw" aria-hidden="true"></i>&nbsp; Валюты</a></li>
+            <li><a href="../all-icons/#text-editor"><i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i>&nbsp; Редактирование</a></li>
+            <li><a href="../all-icons/#directional"><i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>&nbsp; Направление</a></li>
+            <li><a href="../all-icons/#video-player"><i class="fa fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Видео-плеер</a></li>
+            <li><a href="../all-icons/#brand"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i>&nbsp; Бренды</a></li>
+            <li><a href="../all-icons/#medical"><i class="fa fa-medkit fa-fw" aria-hidden="true"></i>&nbsp; Медицина</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-split-left"><a href="../examples/">Примеры</a></li>
+        <li class="dropdown dropdown-split-right hidden-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" title="Развернуть меню"></i>
+            <span class="sr-only">Развернуть меню</span>
+            <span class="toggle drop down"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="../examples/">Примеры</a></li>
+            <li class="divider"></li>
+            <li><a href="../examples/#basic">Базовые иконки</a></li>
+            <li><a href="../examples/#larger">Увеличенные иконки</a></li>
+            <li><a href="../examples/#fixed-width">С фиксированной шириной</a></li>
+            <li><a href="../examples/#list">Иконки списков</a></li>
+            <li><a href="../examples/#bordered-pulled">Обрамленные и вынесенные иконки</a></li>
+            <li><a href="../examples/#animated">Анимированные иконки</a></li>
+              <li><a href="../examples/#accessible">Иконки ограничений</a></li>
+            <li><a href="../examples/#rotated-flipped">Повернутые и отзеркаленные иконки</a></li>
+            <li><a href="../examples/#stacked">Групповые иконки</a></li>
+            <li><a href="../examples/#bootstrap">Примеры Bootstrap 3</a></li>
+            <li><a href="../examples/#custom">Персональный CSS</a></li>
+          </ul>
+        </li>
+        <li class="hidden-sm"><a href="../accessibility/">Общедоступность</a></li>
+        <li class="hidden-xs hidden-md hidden-lg"><a href="../accessibility/"><i class="fa fa-universal-access"></i></a></li>
+        <li><a href="../community/">Сообщество</a></li>
+        <li><a href="../license/">Лицензии</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+<div class="jumbotron jumbotron-ad hidden-print">
+  <div class="container">
+    
+    <h1><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp; Начало работы</h1>
+    <p>Легкие и быстрые способы подключить Font Awesome 4.7.0 на ваш сайт</p>
+    
+  </div>
+</div>
+
+
+<div class="content-underlay" style="padding-bottom:137px"></div>
+
+<div class="container">
+  <section class="get-started-cdn" id="get-started-cdn">
+    <h2 class="page-header margin-top-lg clearfix">
+      Font Awesome CDN
+      <span class="label label-brand text-base pull-right">Супер легко</span>
+    </h2>
+
+    <p class="lead">CDN Font Awesome самый наипростейший способ начать использовать Font Awesome на вашем сайте или в приложении, и всего-лишь одной строкой кода. Не нужно ничего скачивать и устанавливать.</p>
+
+    <form class="row" action="https://cdn.fontawesome.com/register" method="post">
+      <div class="col-sm-6 signup-input">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" class="form-control input-lg margin-bottom" id="email" name="email" placeholder="Введите ваш email">
+      </div>
+
+      <div class="col-sm-6 signup-button">
+        <button type="submit" class="btn btn-success btn-lg btn-block margin-bottom">Получить ссылку на Font Awesome!</button>
+      </div>
+    </form>
+
+    <!-- CASE: error -->
+    <!-- <form class="row" action="http://fontawesome-cdn.dev:4000/register" method="post">
+      <div class="col-sm-6 signup-input has-error">
+        <label for="cdn-email" class="sr-only">Email address</label>
+        <input type="email" class="form-control input-lg margin-bottom" id="email" name="email" placeholder="Your email address">
+        <p id="cdn-email-error" class="help-block">Email address must be valid.</p>
+      </div>
+
+      <div class="col-sm-6 signup-button">
+        <button type="submit" class="btn btn-success btn-lg btn-block margin-bottom">Send my Font Awesome embed code!</button>
+      </div>
+    </form> -->
+
+    <p class="help-block margin-top-none margin-bottom-sm"><a role="button" data-toggle="collapse" href="#cdn-why-email" aria-expanded="false" aria-controls="collapseExample">Для чего нужен ваш email?</a></p>
+
+    <div class="collapse" id="cdn-why-email">
+      <div class="well">
+        Мы создаем каждый набор иконок индивидуально под каждый сайт, что позволит вам изменить иконки быстро и без лишней мороки. Также по этому адресу почты мы можем идентифицировать какой набор иконок ваш, а это значит, что вы можете управлять своими наборами.
+      </div>
+    </div>
+
+    <div class="row margin-bottom-none">
+      <div class="col-sm-6 col-md-3">
+        <h4>Иконки для сайта. Быстро.</h4>
+        <p>Вам не придется тратить время на файлы на вашем сервере. Вы получите все 675 иконки плюс наборы стилей - все оптимизировано для быстрой загрузки.</p>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <h4>Легкие обновления</h4>
+        <p>Так как каждый сайт будет иметь уникальный набор иконок, то вы с легкостью можете его обновлять без каких-либо изменений в коде. Чудненько =).</p>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <h4>Автоподдержка доступности</h4>
+        <p>CDN Font Awesome поможет вам автоматизировать поддержку доступности ваших иконок для всех посетителей. Узнайте подробнее о <a href="../accessibility">лучших практиках доступности</a>.</p>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <h4>Асинхронная загрузка</h4>
+        <p>Хотите ускорить загрузку вашего сайта? И мы тоже. Ваши иконки будут загружаться в фоновом режиме, что даст невероятную скорость вашему сайту.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr margin-top-xl">
+    <span class="hr-text text-xl text-muted">или</span>
+  </div>
+
+  <section class="get-started-download" id="get-started-download">
+    <h2 class="page-header clearfix">
+      Расширенная кастомизация
+      <span class="label label-default text-base pull-right">Легко</span>
+    </h2>
+
+    <div class="row">
+      <div class="col-md-9">
+        <p class="text-lg">
+          Хотите управлять и размещать файлы Font Awesome сами? Вы можете
+          <a href="#modal-download" data-toggle="modal">скачать</a>,
+          кастомизировать и использовать иконки с вашими настройками. В наборе файлов Font Awesome есть как и простой CSS-файл, так и файлы препроцессоров: Sass и Less.</p>
+      </div>
+
+      <div class="col-md-3">
+        <a class="btn btn-default btn-lg btn-block" href="#modal-download" data-toggle="modal">
+          <i class="fa fa-download fa-lg margin-right-sm"></i>
+          Скачать
+        </a>
+      </div>
+    </div>
+
+    <div class="download-css margin-bottom-xl" id="download-css">
+      <h3>Использование CSS</h3>
+
+      <ol>
+        <li>Скопируйте полностью папку <code>font-awesome</code> в папку вашего проекта.</li>
+        <li>
+          Вставьте нижеследующий код в тег <code>&lt;head&gt;</code> в HTML-код вашего вебсайта.
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;path/to/font-awesome/css/font-awesome.min.css&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+        </li>
+        <li>Посмотрите <a href="../examples/">примеры</a> для начала работы с Font Awesome!</li>
+      </ol>
+    </div>
+
+    <div class="download-preprocessors" id="download-preprocessors">
+      <h3>Использование Sass или Less</h3>
+
+      <p>Используйте этот метод для кастомизации Font Awesome 4.7.0 при помощи LESS или SASS.</p>
+      <ol>
+        <li>Скопируйте полностью папку <code>font-awesome</code> в папку вашего проекта.</li>
+        <li>
+          В вашем проекте откройте файлы <code>font-awesome/less/variables.less</code> или <code>font-awesome/scss/_variables.scss</code> и отредактируйте <code>@fa-font-path</code> или <code>$fa-font-path</code>
+          соответственно, для того, чтобы указать путь к папке со шрифтами.
+<div class="highlight"><pre><code class="scss"><span class="k">@fa-font-path</span><span class="nd">:</span>   <span class="s2">&quot;../font&quot;</span><span class="o">;</span>
+</code></pre></div>
+          <p class="alert alert-success"><i class="fa fa-info-circle"></i> Путь к папке со шрифтами должен указывать относительно скомпилированной папки css.</p>
+        </li>
+        <li>Скомпилируйте ваши LESS или SASS файлы при помощи компилятора. Должно все заработать.</li>
+        <li>Посмотрите <a href="../examples/">примеры</a> для начала работы с Font Awesome!</li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="hr margin-top-lg">
+    <span class="hr-text text-xl text-muted">или</span>
+  </div>
+
+  <section class="get-started-advanced" id="get-started-advanced">
+    <h2 class="page-header clearfix">
+      Продвинутый уровень
+      <span class="label label-default text-base pull-right">Профи</span>
+    </h2>
+
+    <div class="ruby-gem-less margin-bottom-xl" id="ruby-gem-less">
+      <h3><a href="https://github.com/FortAwesome/font-awesome-less">Less Ruby Gem</a></h3>
+      <p>
+        Используйте <a href="https://github.com/FortAwesome/font-awesome-less">официальный Font Awesome LESS Ruby Gem</a> для легкого внедрения Font Awesome LESS в Rails-проект.
+        Занимается поддержкой:<a href="https://twitter.com/supercodepoet/">@supercodepoet</a>.
+      </p>
+      <ol>
+        <li>
+          Добавьте эту строку в Gemfile вашего приложения:
+<div class="highlight"><pre><code class="bash">gem <span class="s1">&#39;font-awesome-less&#39;</span>
+</code></pre></div>
+        </li>
+        <li>
+          Далее запустите:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>bundle
+</code></pre></div>
+        </li>
+        <li>Или установите в ручную:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>gem install font-awesome-less
+</code></pre></div>
+        </li>
+      </ol>
+      <p>
+      Если вы используете Rails, то вставьте нижеуказанный код, например, в файл <code>application.less</code>:
+      </p>
+<div class="highlight"><pre><code class="css"><span class="k">@import</span> <span class="s2">&quot;font-awesome-sprockets&quot;</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">&quot;font-awesome&quot;</span><span class="p">;</span>
+</code></pre></div>
+    </div>
+
+    <div class="ruby-gem-sass" id="ruby-gem-sass">
+      <h3><a href="https://github.com/FortAwesome/font-awesome-sass">Sass Ruby Gem</a></h3>
+      <p>
+        Используйте <a href="https://github.com/FortAwesome/font-awesome-sass">официальный Ruby Gem Font Awesome SASS</a> для легкого подключения Font Awesome SASS
+        в ваш Rails- или Compass-проект. Занимается поддержкой:  <a href="https://twitter.com/supercodepoet/">@supercodepoet</a>.
+      </p>
+      <ol>
+        <li>
+          Добавьте нижеуказанную строку в Gemfile вашего проекта:
+<div class="highlight"><pre><code class="bash">gem <span class="s1">&#39;font-awesome-sass&#39;</span>
+</code></pre></div>
+      </li>
+      <li>
+        Далее запустите:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>bundle
+</code></pre></div>
+        </li>
+        <li>Или установите вручную:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>gem install font-awesome-sass
+</code></pre></div>
+      </li>
+    </ol>
+    <p>
+    Если вы используете Rails, то вставьте нижеуказанный код, например, в файл <code>application.scss</code>:
+    </p>
+<div class="highlight"><pre><code class="css"><span class="k">@import</span> <span class="s2">&quot;font-awesome-sprockets&quot;</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">&quot;font-awesome&quot;</span><span class="p">;</span>
+</code></pre></div>
+    </div>
+  </section>
+
+  <section class="get-started-more margin-top-lg" id="get-started-more">
+    <h2 class="page-header">Дополнительная информация</h2>
+  </section>
+
+  <div class="row">
+    <div class="col-md-6" id="support-validators">
+    <h4>Валидаторы</h4>
+    <p>Для того, чтобы обеспечить наилучший результат в старых и глючных браузерах, Font Awesome в некоторых случаях использует <a href="http://browserhacks.com">хаки CSS</a> для того, чтобы обойти глюки и ошибки в браузерах. Естественно, эти хаки вызывают предупреждения при проверке кода в валидаторах. Также, Font Awesome в нескольких ситуациях использует новые свойства CSS , которые еще не полностью стандартизированы, но используются они исключительно для прогрессивного улучшения.</p>
+    <p>На практике эти предупреждения валидатора не имеют значения, так как большая часть CSS работает без хаков и, соответственно, они не принимают участие в работе тех участков, где они не используются. Собственно, поэтому мы и игнорируем эти предупреждения.</p>
+    <p><a href="http://getbootstrap.com/getting-started/#support-validators">Гайд по валидаторам</a> от <a href="http://getbootstrap.com/about/#team">Bootstrap Team</a> под лицензией <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+  </div>
+
+  <div class="col-md-6" id="ie8-font-face">
+    <h4>Internet Explorer 8 и @font-face</h4>
+    <p>
+      IE8 имеет несколько проблем с <code>@font-face</code> при совместном использовании с псевдоэлементом <code>:before</code>.
+      Font Awesome как раз использует такую комбинацию. Если страница закеширована или загружена без наведенного курсора мыши на окно браузера (например, при нажатии на кнопку "обновить" или при загрузке контента через фрейм), то страница будет сгенерирована до подгрузки шрифта. Наведение курсора мыши на страницу (body) должно отобразить некоторые иконки, наведение курсора на остальные не подгруженные иконки также их реанимирует.
+      <a href="https://github.com/FortAwesome/Font-Awesome/issues/954">Подробности</a> данной проблемы.
+    </p>
+    <p><a href="http://getbootstrap.com/getting-started/#support-ie8-font-face">Гайд по использованию @font-face в Internet Explorer 8 </a> от <a href="http://getbootstrap.com/about/#team">Bootstrap Team</a> под лицензией <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" id="need-ie7">
+    <h4>Необходима поддержка IE7 ?</h4>
+    <p>
+      Если вам нужна поддержка IE7 , то примите мои соболезнования. Ну правда. Font Awesome 4.7.0
+      не поддерживает IE7и версии ниже. Вам необходимо прочитать
+      <a href="../3.2.1/get-started/#need-ie7">инструкции по FA 3.2.1 для использования в IE7</a>. Затем можете пойти и пожаловаться тому, кто потребовал поддержку IE7 .
+    </p>
+  </div>
+
+  <div class="col-md-6" id="troubleshooting">
+    <h4>Решение ошибок</h4>
+    <p>
+      Если у вас  возникли проблемы в работе с Font Awesome, то можете поискать решение на
+      <a href="http://fortawesome.github.com/Font-Awesome//wiki/Troubleshooting"> wiki -странице по частым ошибкам</a>.
+      Занимается поддержкой: <a href="https://twitter.com/gtagliala">@gtagliala</a>.
+    </p>
+  </div>
+</div><div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="modal-download-label"
+     xmlns="http://www.w3.org/1999/html">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i><span class="close"></span></button>
+        <h2 class="modal-title" id="modal-download-label">
+          <i class="fa fa-download fa-lg" aria-hidden="true"></i>&nbsp;
+          Скачать
+        </h2>
+      </div>
+      <h3 class="bg-fa5 margin-none padding-lg text-center">
+        Font Awesome 5 доступен!
+      </h3>
+      <div class="modal-body">
+        <div class="row margin-bottom-lg margin-top">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+            <i class="fas fas-trophy-alt fas-3x fas-fw text-muted hidden-xs"></i>
+            <i class="fas fas-trophy-alt fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-9">
+            <h4 class="page-header margin-top-none padding-bottom-sm margin-bottom-sm">Больше иконок</h4>
+            <p>
+              Начните использовать 893 иконки прямо сейчас с бесплатной версией FA, плюс еще 1,283 иконки с Pro-версией, которая позволит вам в дальнейшем получить
+              еще 46 категорий иконок, когда мы их закончим!
+            </p>
+          </div>
+        </div>
+        <div class="row margin-bottom-lg">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+            <i class="fas fas-flask fas-3x fas-fw text-muted hidden-xs"></i>
+            <i class="fas fas-flask fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-9">
+            <h4 class="page-header margin-top-none padding-bottom-sm margin-bottom-sm">Новые SVG</h4>
+            <p>
+              Наши новые SVG в купе с Javascript дадут вам всю мощь SVG без каких-либо хлопот.
+            </p>
+          </div>
+        </div>
+        <div class="row margin-bottom-lg">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+            <i class="fas fas-rocket fas-3x fas-fw text-muted hidden-xs"></i>
+            <i class="fas fas-rocket fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-10">
+            <h4 class="page-header margin-top-none padding-bottom-sm margin-bottom-sm">Еще и еще</h4>
+            <p>
+              Лигатуры для удобного использования на десктопах, обертка для удобного перехода с 4 версии, больше стилей, иконок и инструментов
+              с платной версией FA Pro.
+            </p>
+          </div>
+        </div>
+
+        <a target="_blank" href="https://fontawesome.com/" class="btn btn-fa5 btn-lg btn-block">
+          <h3 class="margin-top margin-bottom strong">
+            Font Awesome 5 &nbsp;<i class="fas fas-external-link" aria-hidden="true"></i>
+          </h3>
+        </a>
+        <div class="text-center margin-top margin-bottom">или</div>
+        <a class="btn btn-default btn-lg btn-block" href="../assets/font-awesome-4.7.0.zip">
+          Спасибо, просто скачать <br class="visible-xs" />Font Awesome 4
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  <footer id="footer" class="footer hidden-print">
+  <div class="container text-center">
+    <div>
+      <i class="fa fa-flag" aria-hidden="true"></i> Font Awesome 4.7.0
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Создано Дейвом Ганди (<a href="https://twitter.com/davegandy">Dave Gandy</a>)
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Перевод на русский язык <a href="http://github.com/mikaspell">Дима Калдузов</a>
+    </div>
+    <div>
+      Font Awesome предоставляется по лицензии <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Разработка предоставляется по лицензии <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>
+      <span class="hide-xs hide-sm">&middot;</span><br class="hide-md hide-lg">
+      Документация предоставляется по лицензии <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+    </div>
+    <div>
+      Спасибо <a href="http://maxcdn.com/"><i class="fa fa-maxcdn"></i> MaxCDN</a> за обеспечение доступа к <a href="https://www.bootstrapcdn.com/fontawesome/">BootstrapCDN для Font Awesome</a>
+    </div>
+    <div class="project">
+      <a href="http://fortawesome.github.com/Font-Awesome/">Репозиторий в GitHub</a> &middot;
+      <a href="http://fortawesome.github.com/Font-Awesome//issues">Обращения</a> &middot;
+      <a href="../3.2.1">Старая документация для 3.2.1</a>
+    </div>
+  </div>
+</footer>
+
+  <div class="modal" id="modal-fa5" tabindex="-1" role="dialog" aria-labelledby="modal-fa5-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-fa5">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i><span class="close"></span></button>
+        <h3 class="modal-title" id="modal-fa5-label">Font Awesome 5 доступен!</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row margin-bottom-lg margin-top">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+            <i class="fas fas-trophy-alt fas-3x fas-fw text-muted hidden-xs"></i>
+            <i class="fas fas-trophy-alt fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-9">
+            <h4 class="page-header margin-top-none padding-bottom-sm margin-bottom-sm">Больше иконок</h4>
+            <p>
+              Начните использовать 893 иконки прямо сейчас с бесплатной версией FA, плюс еще 1,283 иконки с Pro-версией, которая позволит вам в дальнейшем получить
+              еще 46 категорий иконок, когда мы их закончим!
+            </p>
+          </div>
+        </div>
+        <div class="row margin-bottom-lg">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+            <i class="fas fas-flask fas-3x fas-fw text-muted hidden-xs"></i>
+            <i class="fas fas-flask fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-9">
+            <h4 class="page-header margin-top-none padding-bottom-sm margin-bottom-sm">Новые SVG</h4>
+            <p>
+              Наши новые SVG в купе с Javascript дадут вам всю мощь SVG без каких-либо хлопот.
+            </p>
+          </div>
+        </div>
+        <div class="row margin-bottom-lg">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+            <i class="fas fas-rocket fas-3x fas-fw text-muted hidden-xs"></i>
+            <i class="fas fas-rocket fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-10">
+            <h4 class="page-header margin-top-none padding-bottom-sm margin-bottom-sm">Еще и еще</h4>
+            <p>
+              Лигатуры для удобного использования на десктопах, обертка для удобного перехода с 4 версии, больше стилей, иконок и инструментов
+              с платной версией FA Pro.
+            </p>
+          </div>
+        </div>
+
+        <a target="_blank" href="https://fontawesome.com/" class="btn btn-fa5 btn-lg btn-block">
+          <h3 class="margin-top margin-bottom strong">
+            Font Awesome 5 &nbsp;<i class="fas fas-external-link" aria-hidden="true"></i>
+          </h3>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://platform.twitter.com/widgets.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3.13.1/algoliasearch.jquery.min.js" integrity="sha256-2MTQjOt4Q02v+W/QjgCO5yv+si9RAo/o/RGR5alVYzY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/algoliasearch.helper/2.9.1/algoliasearch.helper.min.js" integrity="sha256-MhjLBzVVNkMEKnIE2ueYNb7QSj+oiSv4x89dlui09hg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/underscorejs/1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/backbonejs/1.2.2/backbone-min.js" integrity="sha256-p6bkfFqmxtebrKOS+wyGi+Qf3d111eWUQP67keyXJ6Q=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/jsdelivr-rum/1.5/jsdelivr-rum.min.js" integrity="sha256-HlY2rbkgbiHhtilMXmQ86rjL/EIxGDtdg9GU9/T2ZxE=" crossorigin="anonymous"></script>
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/search.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter29677530 = new Ya.Metrika({id:29677530,
+                      webvisor:true,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true});
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <!-- /Yandex.Metrika counter -->
+  <noscript><div><img src="//mc.yandex.ru/watch/29677530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <!-- Yandex.RTB R-A-229258-1 -->
+  <script type="text/javascript">
+    (function(w, d, n, s, t) {
+      w[n] = w[n] || [];
+      w[n].push(function() {
+        Ya.Context.AdvManager.render({
+          blockId: "R-A-229258-1",
+          renderTo: "yandex_rtb_R-A-229258-1",
+          async: true
+        });
+      });
+      t = d.getElementsByTagName("script")[0];
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.src = "//an.yandex.ru/system/context.js";
+      s.async = true;
+      t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+  </script>
+  </body>
+</html>
